@@ -1,0 +1,64 @@
+schema_version = 1
+candidate = "EC1"
+gate = "architecture"
+result = "BLOCKED_NO_WINNER"
+decided_utc = "2026-08-06"
+requirements_digest = "a4a1f6e9f2f0d8d621146847bba0bcc6d942a323e43df517a2e220912b9bd828"
+submissions = 3
+survivors = 0
+primitive_tournament_started = false
+spec_digest_issued = false
+cipher_released = false
+unaffiliated_review_completed = false
+
+[[submission]]
+label = "A"
+verdict = "NO-GO"
+report = "research/architectures/A.md"
+sha256 = "1d6b5c73881130702c37b225737fed7be5b268dbb7d842dfddd01e087449a852"
+failed_families = ["combined-feedback", "evolving-state", "wide-block", "encode-then-encipher"]
+
+[[submission]]
+label = "B"
+verdict = "NO-GO"
+report = "research/architectures/B.md"
+sha256 = "b5f91c5c44ffeac180e11443f4a7db876676e66f8b975076579437455cd9a578"
+failed_families = ["siv", "synthetic-tag-seed", "stream-plus-authenticator"]
+
+[[submission]]
+label = "C"
+verdict = "NO-GO"
+report = "research/architectures/C.md"
+sha256 = "54bbe8f7272507d7ba4597e67eecb2794750d387102eb372af3ad16dd01b53d7"
+failed_families = ["wide-block", "encode-then-encipher", "encrypt-mix-encrypt"]
+
+[[review]]
+kind = "prior-art-terminology"
+report = "research/prior-art/search-a.md"
+sha256 = "b563f62c8bf1e3e00a5928689fef6e16a2a69d82b4a5636a9589ef133f7bdc81"
+result = "NO_ADMISSIBLE_SURVIVOR"
+
+[[review]]
+kind = "prior-art-dependency-graph"
+report = "research/prior-art/search-b.md"
+sha256 = "8ccaa6725d82bae11443d631a3b8654def39349f07d76f741dbb4b663400b06e"
+result = "NO_ADMISSIBLE_SURVIVOR"
+
+[[review]]
+kind = "formal-adversarial-classifier"
+report = "research/reviews/architecture-gate-formal.md"
+sha256 = "2cfe6b10f074396ee5eae5a10c017060bbcc2bc15834982df49eebb1f60d3c69"
+result = "ALL_SUBMISSIONS_DIRECTLY_EXCLUDED"
+
+[[review]]
+kind = "process-gate-audit"
+report = "research/reviews/process-gate-audit.md"
+sha256 = "017e03a8878d5451ffbb1961dcf743759ea2bac01e871766167c9465f961c0c9"
+result = "STOP_REQUIRED"
+
+[claim_limits]
+universal_architecture_impossibility = false
+absolute_novelty = false
+freedom_to_operate = false
+production_security = false
+

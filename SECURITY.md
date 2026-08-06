@@ -2,8 +2,9 @@
 
 ## Current status
 
-NauqCrypt has no usable encryption release. Architecture documents, toy models,
-and future candidate code are research artifacts and may be completely broken.
+NauqCrypt has no usable encryption release. EC1 closed with no winner at the
+architecture gate. Architecture documents and toy models are research artifacts
+and may be completely broken.
 
 ## Intended EC1 use
 
@@ -23,4 +24,3 @@ reproducer when possible.
 No bounty or embargo duration is promised by this repository. A confirmed
 security fix always creates a new candidate identifier and resets affected
 evidence.
-

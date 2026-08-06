@@ -2,7 +2,7 @@
 
 ## Current phase
 
-Architecture feasibility and novelty.
+EC1 closed at the architecture gate: `BLOCKED_NO_WINNER`.
 
 ## Completed
 
@@ -13,8 +13,10 @@ Architecture feasibility and novelty.
 - Reproducible research container built and smoke-tested.
 - Three blinded architecture reports sealed. All three returned `NO-GO` after
   their hypotheses canonicalized to excluded families.
-- Independent taxonomy, prior-art, and adversarial review is in progress; the
-  Wave 1 outcome is not yet the final architecture-gate decision.
+- Two independent prior-art searches and an adversarial formal classifier
+  sealed; positive architecture equivalents were found for every submission.
+- An independent internal process audit confirmed the preregistered stop rule.
+- The machine-readable architecture outcome and public EC1 no-go were issued.
 
 ## Not yet available
 
@@ -23,3 +25,9 @@ Architecture feasibility and novelty.
 - No specification digest exists.
 - No encryption implementation or test vector is approved.
 - No security or novelty claim has been earned.
+
+## Gate consequence
+
+The primitive tournament, specification freeze, proofs, implementations, and
+validation campaigns did not start. Any normative clarification or new search
+requires a new candidate identifier; EC1's failed gates will not be weakened.

@@ -43,6 +43,6 @@ reuse leakage, resource feasibility, a toy instance, and self-attacks.
 | B | `b5f91c5c44ffeac180e11443f4a7db876676e66f8b975076579437455cd9a578` | deterministic AE/PRI or synthetic transcript state | NO-GO |
 | C | `54bbe8f7272507d7ba4597e67eecb2794750d387102eb372af3ad16dd01b53d7` | wide-block encode-then-encipher DAE | NO-GO |
 
-The result is provisional until the independent Wave 2 taxonomy, prior-art,
-and adversarial reviews are sealed.
+The provisional condition was discharged by the sealed reports in
+`research/WAVE-2.md`. The final gate result is `BLOCKED_NO_WINNER`.
 

@@ -12,9 +12,10 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Install pinned Rust toolchain
         run: rustup show active-toolchain
       - name: Verify frozen foundation and sealed architecture reports
-        run: ./scripts/verify-foundation.sh
-
+        run: |
+          ./scripts/verify-foundation.sh
+          ./scripts/verify-architecture-gate.sh

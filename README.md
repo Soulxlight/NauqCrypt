@@ -1,5 +1,13 @@
 # NauqCrypt
 
+## EC1 result: blocked, no winner
+
+The preregistered EC1 architecture gate closed on 2026-08-06 with zero
+survivors. All three blinded hypotheses reduced to explicitly excluded
+families. **No cipher, encryption API, test vector set, or security-approved
+implementation exists.** See [EC1-NO-GO.md](EC1-NO-GO.md) and the sealed
+research evidence for the decision.
+
 NauqCrypt is a public research project attempting to produce an experimental,
 clean-sheet authenticated-encryption candidate for replaceable, non-sensitive
 data.
@@ -32,8 +40,8 @@ machine-readable in [evidence/gates.toml](evidence/gates.toml).
 
 ## Status
 
-Architecture gate under independent review. The first blinded wave produced no
-admissible design. No encryption API or file format is available for use.
+EC1 is closed at the architecture gate as `BLOCKED_NO_WINNER`. No encryption
+API or file format is available for use.
 
 ## Licensing
 
