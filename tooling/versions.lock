@@ -1,0 +1,15 @@
+base_image=rust:1.96.0-bookworm@sha256:5e2214abe154fe26e39f64488952e5c991eeed1d6d6da7cc8381ae83927f0cfc
+rustc=1.96.0
+clang=14.0-55.7~deb12u1
+cmake=3.25.1-1
+ninja=1.11.1-2~deb12u1
+z3=4.8.12-3.1
+cvc5=1.0.3-1
+boolector=1.5.118.6b56be4.121013-1.3
+aflplusplus=4.04c-4
+valgrind=3.19.0-1
+qemu-user=7.2+dfsg-7+deb12u18+b3
+cargo-fuzz=0.13.2
+cargo-mutants=27.1.0
+hyperfine=1.20.0
+

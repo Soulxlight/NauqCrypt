@@ -32,7 +32,8 @@ machine-readable in [evidence/gates.toml](evidence/gates.toml).
 
 ## Status
 
-Architecture research. No encryption API or file format is available for use.
+Architecture gate under independent review. The first blinded wave produced no
+admissible design. No encryption API or file format is available for use.
 
 ## Licensing
 
@@ -40,4 +41,3 @@ Source code is offered under either the MIT License or Apache License 2.0.
 Specifications, research documents, test vectors, and generated evidence are
 dedicated under CC0 1.0 unless a file says otherwise. See [PATENTS.md](PATENTS.md)
 for the patent non-assert and limitations.
-
