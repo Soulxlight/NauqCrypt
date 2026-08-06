@@ -1,0 +1,73 @@
+schema_version = 1
+candidate = "EC1"
+status = "preregistered"
+
+[external]
+key_bytes = 32
+nonce_bytes = 24
+tag_bytes = 32
+domain_min_bytes = 1
+domain_max_bytes = 255
+raw_message_max_bytes = 4294967295
+file_chunk_bytes = 65536
+file_max_bytes = 281474976710656
+
+[security]
+profile_bits_min = 128
+classical_key_search_bits = 256
+q1_key_search_bits = 128
+invocations_per_key_exclusive_max = 1073741824
+plaintext_bytes_per_key_exclusive_max = 1152921504606846976
+failed_verifications_per_key_exclusive_max = 281474976710656
+nonce_reuse_leakage = "whole-transcript-equality-only"
+key_commitment = "CMT-1"
+
+[architecture]
+full_passes_max = 2
+working_state_bytes_max = 2048
+heap_allocations_steady_state = 0
+tautological_whole_scheme_assumption_allowed = false
+excluded_family_match_allowed = false
+
+[primitive]
+families = ["boolean-xor-and-rotate", "arx", "arx-fixed-odd-multiply"]
+state_sizes_bits = [512, 768, 1024]
+trail_bound_bits = 256
+trail_bound_round_fraction_max = 0.6666666666666666
+known_attack_round_fraction_max = 0.75
+full_round_better_than_claimed_bound_allowed = false
+
+[conformance]
+structured_kats_min = 1024
+intermediate_traces_min = 64
+random_cross_model_cases_min = 16777216
+mutation_score_percent_min = 90
+
+[fuzz]
+targets = ["core", "message-parser", "file-state-machine", "rust-c-differential"]
+engines = ["libfuzzer", "afl++"]
+cpu_hours_per_target_engine_min = 24
+executions_per_target_engine_min = 268435456
+
+[timing]
+physical_targets = ["x86_64", "aarch64"]
+runs_per_target = 5
+traces_per_run_min = 10000000
+absolute_t_statistic_persistent_max = 4.5
+
+[performance]
+primary_baseline = "AES-256-GCM-SIV"
+informational_baselines = ["XChaCha20-Poly1305", "Ascon-AEAD128"]
+payload_bytes = [0, 64, 1024, 65536, 1048576]
+fresh_processes = 5
+samples_per_size_min = 30
+median_slowdown_max = 2.0
+p95_slowdown_max = 2.5
+optimized_crypto_code_bytes_max = 65536
+
+[release]
+public_repository = "https://github.com/Soulxlight/NauqCrypt"
+code_license = "MIT OR Apache-2.0"
+documents_vectors_evidence_license = "CC0-1.0"
+candidate_use = "replaceable-non-sensitive-data-only"
+
